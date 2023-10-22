@@ -5,7 +5,7 @@ import io.gatling.http.Predef.http
 class LoadTest extends Simulation {
 
   // Описываем конфигурацию http - в частности базовый url
-  val httpConf = http.baseUrl("https://www.mvideo.ru")
+  val httpConf = http.baseUrl("https://computer-database.gatling.io")
 
   // Опишем нашу нагрузочную стратегию в методе setUp
   setUp(

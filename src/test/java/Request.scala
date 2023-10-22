@@ -13,7 +13,7 @@ object Request {
       http("getOrders")
 
         // прописываем http метод в данном случае get
-        .get("/noutbuki-planshety-komputery-8/")
+        .get("/computers")
         // делаем проверку о том что статус 200
         .check(status.is(200))
     )
