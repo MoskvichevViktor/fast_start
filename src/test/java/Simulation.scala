@@ -1,5 +1,6 @@
-import io.gatling.core.Predef.scenario
+import io.gatling.core.Predef._
 import Request._
+import io.gatling.core.feeder.BatchableFeederBuilder
 
 object Simulation {
 
@@ -8,6 +9,8 @@ object Simulation {
 
     // в блоке exec укажем имя нашего запроса
     .exec(getOrders)
+    // добавляем второй написанный нами запрос - post
+    .exec(postOrder)
 
 
 }

@@ -16,7 +16,7 @@ class LoadTest extends Simulation {
 
       // укажем стратегию нагрузки
       //в каждую секунду подаётся определённое количество пользователей на протяжении указанного времени
-      constantUsersPerSec(100) during(5)
+      constantUsersPerSec(1) during(1)
     ).protocols(httpConf) // .используем ранее описанный протокол
   )
 
