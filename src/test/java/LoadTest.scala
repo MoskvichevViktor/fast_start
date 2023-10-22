@@ -20,5 +20,4 @@ class LoadTest extends Simulation {
     ).protocols(httpConf) // .используем ранее описанный протокол
   )
 
-
 }
